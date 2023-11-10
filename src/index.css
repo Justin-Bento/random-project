@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/public/assets/fonts/OpenSans-VariableFont.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Itailic";
+  src: url("/public/assets/fonts/OpenSans-Italic-VariableFont.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
