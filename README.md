@@ -1,8 +1,7 @@
-# React + Vite
+# Marker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Marker, a platform crafted to simplify your web browsing. The platform aims to allow users to organize their interests effortlessly through folders, each containing a selection of websites tailored to a specific interest.
 
-Currently, two official plugins are available:
+As a user, you can share insights into your interests, accompanied by your top 5 go-to websites for that category. Marker's unique feature lies in its ability to compile information from these submitted websites and provide personalized suggestions based on their metadata.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our mission at Marker is to enhance your online exploration, offering a more personalized and enriched browsing experience. Let Marker be your guide to discovering new and exciting content on the web!
