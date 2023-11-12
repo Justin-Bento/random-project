@@ -25,7 +25,7 @@ export default function MarketingNavbar() {
               <RiMenuLine className="w-4 h-4" />
             </div>
           </div>
-          <div className="hidden lg:flex  flex-col lg:flex-row lg:items-center lg:justify-end">
+          <div className="hidden lg:flex lg:gap-4  flex-col lg:flex-row lg:items-center lg:justify-end">
             {/* 
               This section includes links to markers pages for the markering side of the application. 
               People will usually visit this page first before going into the applicaiton.
