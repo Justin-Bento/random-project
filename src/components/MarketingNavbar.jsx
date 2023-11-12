@@ -4,21 +4,11 @@ import { Link } from "react-router-dom";
 export default function MarketingNavbar() {
   return (
     <>
-      <header className="p-4 bg-gray-50 shadow">
-        <div className="flex flex-col lg:flex-row items-start gap-4 lg:items-center justify-start lg:justify-between">
-          <Link to="/">
-            <img
-              src="/assets/logo/marker_rgb_black.svg"
-              alt=""
-              className="h-8 w-auto"
-            />
-          </Link>
-          <nav className="flex flex-col lg:flex-row items-center gap-4">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/conact">Contact</Link>
-          </nav>
-        </div>
+      <header className="overflow-hidden rounded-lg bg-white shadow">
+        <section className="px-4 py-5 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className=" h-auto flex items-center justify-between"></div>
+          <div className=" h-auto"></div>
+        </section>
       </header>
     </>
   );
