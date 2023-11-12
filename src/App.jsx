@@ -5,9 +5,10 @@ import { Route, Routes } from "react-router-dom";
     1. `path`: Specifies the URL path for the desired component.
     2. `element`: Specifies the component to be rendered for the given route.
 */
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./pages/marketing/Home";
+import About from "./pages/marketing/About";
+import Contact from "./pages/marketing/Contact";
+import Application from "./pages/app/application";
 import MarketingNavbar from "./components/MarketingNavbar";
 
 export default function App() {
@@ -25,6 +26,9 @@ export default function App() {
 
         {/* The "/contact" path renders the Contact component */}
         <Route path="/contact" element={<Contact />} />
+
+        {/* The "/app" path renders the application component for the application interface of marker */}
+        <Route path="/app" element={<Application />} />
       </Routes>
     </>
   );
