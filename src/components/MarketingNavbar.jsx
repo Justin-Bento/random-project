@@ -38,7 +38,7 @@ export default function MarketingNavbar() {
               Home
             </Link>
             <Link
-              to="/"
+              to="/about"
               aria-label="Link to about marker page"
               className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
             >
@@ -52,7 +52,7 @@ export default function MarketingNavbar() {
               Community
             </Link>
             <Link
-              to="/"
+              to="/contact"
               aria-label="link to marker's donation page"
               className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
             >
