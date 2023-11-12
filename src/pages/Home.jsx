@@ -5,7 +5,10 @@ export default function Home() {
     <>
       <section>
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[90vh]">
-          <div className="flex items-center justify-center">
+          <div
+            aria-label="random image"
+            className="flex items-center justify-center"
+          >
             <svg
               width="503"
               height="503"
@@ -41,6 +44,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center  gap-x-6">
               <Link
+                aria-label="link to main app"
                 to="/app"
                 className="rounded-md bg-transparent border px-3.5 py-2 text-sm font-semibold text-zince-700  hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
               >
