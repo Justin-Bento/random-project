@@ -19,7 +19,7 @@ export default function MarketingNavbar() {
               <RiMenuLine className="w-4 h-4" />
             </div>
           </div>
-          <div className="flex items-center lg:justify-end gap-4">
+          <div className="hidden lg:flex  flex-col lg:flex-row lg:items-center lg:justify-end">
             <Link
               to="/"
               className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-zinc-100 transition-colors"
