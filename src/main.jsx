@@ -4,7 +4,12 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Create the <main> element dynamically
+const mainElement = document.createElement("main");
+document.body.appendChild(mainElement);
+
+// Render the React application inside the <main> element
+ReactDOM.createRoot(mainElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
