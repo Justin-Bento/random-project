@@ -5,9 +5,12 @@ import { RiMenuLine } from "react-icons/ri";
 export default function MarketingNavbar() {
   return (
     <>
+      {/* Created a pannel where you can put content inside here is the pannels outline. */}
       <header className="overflow-hidden rounded-lg bg-white shadow">
         <section className="px-4 py-5 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Here is where the pannels content goes inside. */}
           <div className=" h-auto flex items-center justify-between">
+            {/* Branding includes company logo with a mobile menu icon that hides on large screens. */}
             <Link
               to="/"
               aria-label="markers logo that you can click to home page"
@@ -23,6 +26,10 @@ export default function MarketingNavbar() {
             </div>
           </div>
           <div className="hidden lg:flex  flex-col lg:flex-row lg:items-center lg:justify-end">
+            {/* 
+              This section includes links to markers pages for the markering side of the application. 
+              People will usually visit this page first before going into the applicaiton.
+            */}
             <Link
               to="/"
               aria-label="Link to Home page"
