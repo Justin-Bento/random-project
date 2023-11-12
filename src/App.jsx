@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 /*  
-  Routes as a container/parent for all the individual  routes that will bre created in our app
-  Route is used to create single route. It takes two arrtibutes: 
-    1. Path, specifies the URL path of the desired component. You can call this pathname whatever you want. Above, you'll notice that the first pathname is a backslash (/). Any component whose pathname is a backslash will get rendered first whenever the app loads for the first time. This implies that the Home component will be the first component to get rendered.
-    2. Element, specifies the componment the route should render.
+  The `Routes` component serves as a container/parent for all individual routes in our app.
+  The `Route` component is used to define a single route. It has two attributes:
+    1. `path`: Specifies the URL path for the desired component.
+    2. `element`: Specifies the component to be rendered for the given route.
 */
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,10 +13,17 @@ import MarketingNavbar from "./components/MarketingNavbar";
 export default function App() {
   return (
     <>
+      {/* Display the MarketingNavbar component on top of all routes */}
       <MarketingNavbar />
+      {/* Define the routes using the `Routes` component */}
       <Routes>
-        <Route path="/" element={<Home />} />{" "}
+        {/* The root path ("/") renders the Home component */}
+        <Route path="/" element={<Home />} />
+
+        {/* The "/about" path renders the About component */}
         <Route path="/about" element={<About />} />
+
+        {/* The "/contact" path renders the Contact component */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
