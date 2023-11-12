@@ -6,7 +6,7 @@ export default function MarketingNavbar() {
   return (
     <>
       {/* Created a pannel where you can put content inside here is the pannels outline. */}
-      <header className="overflow-hidden rounded-lg bg-white shadow">
+      <header className="overflow-hidden bg-white shadow">
         <section className="px-4 py-5 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Here is where the pannels content goes inside. */}
           <div className=" h-auto flex items-center justify-between">
