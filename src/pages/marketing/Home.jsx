@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { RiStackLine, RiFocus2Line, RiDeviceLine } from "react-icons/ri";
 
 export default function Home() {
   return (
     <>
-      <section>
+      <section aria-label="Hero section introducing Marker - Your Innovative Solution for [Specify Purpose]">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[90vh]">
           <div
             aria-label="random image"
@@ -51,6 +52,49 @@ export default function Home() {
                 Get started Organizing Your Digital World!
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Features section introducing Marker - Your Innovative Solution for [Specify Purpose]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex flex-col items-start gap-2">
+            <span aria-label="Icons">
+              <RiStackLine className="w-7 h-7" />
+            </span>
+            <h2 className="text-xl text-zince-800 leading-7 font-bold">
+              Unified Resource Hub
+            </h2>
+            <p className="leading-7 tracking-wide text-zinc-600">
+              Access new website based of your saved websites, tools, and in one
+              organized space. Marker simplifies your digital surfing life,
+              making it easy to find and new resources.
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-2">
+            <span aria-label="Icons">
+              <RiFocus2Line className="w-7 h-7" />
+            </span>
+            <h2 className="text-xl text-zince-800 leading-7 font-bold">
+              Recommendation Engine
+            </h2>
+            <p className="leading-7 tracking-wide text-zinc-600">
+              Discover new resources tailored to your interests and project
+              needs. Our suggestions are based of the folder so you&#39;re
+              always in the know about the most relevant content
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-2">
+            <span aria-label="Icons">
+              <RiDeviceLine className="w-7 h-7" />
+            </span>
+            <h2 className="text-xl text-zince-800 leading-7 font-bold">
+              Collaboration Made Easy
+            </h2>
+            <p className="leading-7 tracking-wide text-zinc-600">
+              Share collections of resources with your team or collaborators,
+              making it a breeze to work together, gather feedback, and stay in
+              sync on your creative endeavors.
+            </p>
           </div>
         </div>
       </section>
