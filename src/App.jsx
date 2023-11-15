@@ -11,6 +11,7 @@ import Contact from "./pages/marketing/Contact";
 import Application from "./pages/app/application";
 import MarketingNavbar from "./components/MarketingNavbar";
 import Bookmarks from "./pages/app/Bookmarks";
+import Folder from "./pages/app/Folder";
 
 export default function App() {
   return (
@@ -29,11 +30,13 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
 
         {/* The "/app" path renders the application component for the application interface of marker */}
-        <Route path="/app" element={<Application />} />
-
-        {/* The "/bookmark-view" path renders the Bookmarks component for the folder view of marker */}
-        <Route path="/bookmark-view" element={<Bookmarks />} />
+        <Route path="/app">
+          <Route index element={<Application />} />
+          <Route path="bookmarks" element={<Folder />} />
+          <Route path="bookmarks/:id" element={<Bookmarks />} />
+        </Route>
       </Routes>
     </>
   );
 }
+//
