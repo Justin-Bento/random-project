@@ -33,6 +33,7 @@ export default function App() {
         <Route path="/dashboard">
           <Route index element={<Application />} />
           <Route path="folders" element={<Folder />} />
+          <Route path="folders/:id" element={<Bookmarks />} />
         </Route>
       </Routes>
     </>
