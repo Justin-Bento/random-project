@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // Use Link to navigate to routes
 import { RiMenuLine } from "react-icons/ri";
 
-export default function MarketingNavbar() {
+export default function Appbar() {
   return (
     <>
       {/* Created a pannel where you can put content inside here is the pannels outline. */}
@@ -35,35 +35,7 @@ export default function MarketingNavbar() {
               aria-label="Link to Home page"
               className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
             >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              aria-label="Link to about marker page"
-              className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              to="/"
-              aria-label="Link to marker's community page"
-              className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
-            >
-              Community
-            </Link>
-            <Link
-              to="/contact"
-              aria-label="link to marker's donation page"
-              className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
-            >
-              Support us
-            </Link>
-            <Link
-              to="/dashboard"
-              aria-label="link to marker's new account page"
-              className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-50 bg-zinc-700 hover:bg-zinc-700/80 transition-colors"
-            >
-              Get Started
+              Marketing
             </Link>
           </div>
         </section>
