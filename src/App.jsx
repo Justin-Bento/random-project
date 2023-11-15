@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 // Import global components for the marker application
 import Appbar from "./components/Appbar";
+import Footer from "./components/Footer";
 
 // Import pages for the marketing section
 import Home from "./pages/marketing/Home";
@@ -20,7 +21,7 @@ export default function App() {
   return (
     <>
       <Appbar />
-      <Routes>
+      <Footer>
         {/* Marketing Section Routes */}
         <Route path="/">
           {/* Home page */}
@@ -40,7 +41,7 @@ export default function App() {
           {/* Bookmarks page with dynamic parameter */}
           <Route path="folders/:id" element={<Bookmarks />} />
         </Route>
-      </Routes>
+      </Footer>
     </>
   );
 }
