@@ -30,16 +30,44 @@ export default function Appbar() {
               This section includes links to markers pages for the markering side of the application. 
               People will usually visit this page first before going into the applicaiton.
             */}
-            <Link
-              to="/"
-              aria-label="Link to Home page"
-              className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
-            >
-              Marketing
-            </Link>
+            {header_navigation.map((data) => {
+              return (
+                <Link
+                  key={data.url_path}
+                  to={data.url_path}
+                  aria-label="Link to Home page"
+                  className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
+                >
+                  {data.url_name}
+                </Link>
+              );
+            })}
           </div>
         </section>
       </header>
     </>
   );
 }
+
+const header_navigation = [
+  {
+    id: 1,
+    url_path: "/",
+    url_name: "Home",
+  },
+  {
+    id: 1,
+    url_path: "/about",
+    url_name: "About",
+  },
+  {
+    id: 1,
+    url_path: "/contact",
+    url_name: "Contact",
+  },
+  {
+    id: 1,
+    url_path: "/dashboard",
+    url_name: "Dashboard",
+  },
+];
