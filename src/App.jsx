@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
       <Appbar />
-      <Footer>
+      <Routes>
         {/* Marketing Section Routes */}
         <Route path="/">
           {/* Home page */}
@@ -41,7 +41,8 @@ export default function App() {
           {/* Bookmarks page with dynamic parameter */}
           <Route path="folders/:id" element={<Bookmarks />} />
         </Route>
-      </Footer>
+      </Routes>
+      <Footer />
     </>
   );
 }
