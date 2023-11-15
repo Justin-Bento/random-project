@@ -32,8 +32,7 @@ export default function App() {
         {/* The "/app" path renders the application component for the application interface of marker */}
         <Route path="/dashboard">
           <Route index element={<Application />} />
-          <Route path="bookmarks" element={<Folder />} />
-          <Route path="bookmarks/:id" element={<Bookmarks />} />
+          <Route path="folders" element={<Folder />} />
         </Route>
       </Routes>
     </>
