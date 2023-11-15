@@ -59,7 +59,7 @@ export default function MarketingNavbar() {
               Support us
             </Link>
             <Link
-              to="/app"
+              to="/dashboard"
               aria-label="link to marker's new account page"
               className="rounded bg-transparent px-3 py-1.5 text-sm font-semibold text-zinc-50 bg-zinc-700 hover:bg-zinc-700/80 transition-colors"
             >
