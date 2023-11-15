@@ -23,8 +23,8 @@ export default function Folder() {
 
   return (
     <>
-      <section className="overflow-hidden">
-        <div className="px-4 py-5 sm:p-6">
+      <section className="overflow-hidden min-h-screen">
+        <div className="px-4 py-5 sm:p-6 lg:py-16 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>
               <Greeting name={"John"} />
