@@ -15,6 +15,7 @@ function Application() {
         key={prevFolders.length} // Use a unique key for each folder
         Title="Hello World"
         Supporting="This is awesome, the card is working"
+        Link="bookmarks/:idJun"
         Media="https://images.unsplash.com/photo-1699116550661-bea051952f96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />,
     ]);
