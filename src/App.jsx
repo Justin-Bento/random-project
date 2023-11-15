@@ -1,42 +1,40 @@
+// Import necessary components and routing elements from react-router-dom
 import { Route, Routes } from "react-router-dom";
-/*  
-  The `Routes` component serves as a container/parent for all individual routes in our app.
-  The `Route` component is used to define a single route. It has two attributes:
-    1. `path`: Specifies the URL path for the desired component.
-    2. `element`: Specifies the component to be rendered for the given route.
-*/
+
+// Import pages for the marketing section
 import Home from "./pages/marketing/Home";
 import About from "./pages/marketing/About";
 import Contact from "./pages/marketing/Contact";
-import Application from "./pages/app/application";
-import MarketingNavbar from "./components/MarketingNavbar";
-import Bookmarks from "./pages/app/Bookmarks";
+
+// Import pages for the app section
+import Dashboard from "./pages/app/Dashboard";
 import Folder from "./pages/app/Folder";
+import Bookmarks from "./pages/app/Bookmarks";
 
+// Define the main App component
 export default function App() {
+  // Return the Routes element to define the routing structure
   return (
-    <>
-      {/* Display the MarketingNavbar component on top of all routes */}
-      <MarketingNavbar />
-      {/* Define the routes using the `Routes` component */}
-      <Routes>
-        {/* The root path ("/") renders the Home component */}
-        <Route path="/" element={<Home />} />
+    <Routes>
+      {/* Marketing Section Routes */}
+      <Route path="/">
+        {/* Home page */}
+        <Route index element={<Home />} />
+        {/* About page */}
+        <Route path="about" element={<About />} />
+        {/* Contact page */}
+        <Route path="contact" element={<Contact />} />
+      </Route>
 
-        {/* The "/about" path renders the About component */}
-        <Route path="/about" element={<About />} />
-
-        {/* The "/contact" path renders the Contact component */}
-        <Route path="/contact" element={<Contact />} />
-
-        {/* The "/app" path renders the application component for the application interface of marker */}
-        <Route path="/dashboard">
-          <Route index element={<Application />} />
-          <Route path="folders" element={<Folder />} />
-          <Route path="folders/:id" element={<Bookmarks />} />
-        </Route>
-      </Routes>
-    </>
+      {/* App Section Routes */}
+      <Route path="/dashboard">
+        {/* Dashboard page */}
+        <Route index element={<Dashboard />} />
+        {/* Folders page */}
+        <Route path="folders" element={<Folder />} />
+        {/* Bookmarks page with dynamic parameter */}
+        <Route path="folders/:id" element={<Bookmarks />} />
+      </Route>
+    </Routes>
   );
 }
-//
