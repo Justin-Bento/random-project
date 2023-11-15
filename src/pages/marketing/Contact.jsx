@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <div>Contact</div>
+      <div className="min-h-screen">Contact</div>
     </>
   );
 }
