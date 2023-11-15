@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function application() {
+export default function Dashboard() {
   return (
     <>
       <h1>Here is a link to all pages inside the application</h1>
