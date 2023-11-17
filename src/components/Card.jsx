@@ -7,7 +7,7 @@ export default function Card(props) {
       <img
         src={props.Media}
         alt=""
-        className="w-full h-48 bg-gray-300 rounded-t"
+        className="group aspect-video aspect-w-10 block w-full overflow-hidden object-cover object-center rounded-t  bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
       />
       <div className="p-4">
         <p className="text-xl font-bold capitalize">{props.Title}</p>
@@ -25,9 +25,10 @@ export default function Card(props) {
           >
             <path d="M6.41421 15.89L16.5563 5.74786L15.1421 4.33365L5 14.4758V15.89H6.41421ZM7.24264 17.89H3V13.6474L14.435 2.21233C14.8256 1.8218 15.4587 1.8218 15.8492 2.21233L18.6777 5.04075C19.0682 5.43128 19.0682 6.06444 18.6777 6.45497L7.24264 17.89ZM3 19.89H21V21.89H3V19.89Z"></path>
           </svg>
+
           <Link
             to={props.Link}
-            className="border-2 p-1  rounded fill-gray-700 hover:border-orange-200 hover:cursor-pointer"
+            className="border-2 p-1 object-fill object-center rounded fill-gray-700 hover:border-orange-200 hover:cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
