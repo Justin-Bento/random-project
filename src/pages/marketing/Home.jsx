@@ -1,103 +1,71 @@
 import { Link } from "react-router-dom";
-import { RiStackLine, RiFocus2Line, RiDeviceLine } from "react-icons/ri";
 
 export default function Home() {
   return (
-    <>
-      <section aria-label="Hero section introducing Marker - Your Innovative Solution for [Specify Purpose]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[90vh]">
-          <div
-            aria-label="random image"
-            className="flex items-center justify-center"
+    <div className="relative">
+      <section className="grid grid-cols-1 lg:grid-cols-2 py-12 min-h-screen">
+        <div className="flex items-center">
+          <FramerShapes />
+        </div>
+        <div className="flex items-start justify-center flex-col max-w-[100ch] relative">
+          <h1 className="font-display text-5xl font-semibold tracking-normal text-neutral-950 sm:text-6xl">
+            Unlock a Smarter Web Experience with Marker!
+          </h1>
+          <p className="leading-7 mt-4 text-xl tracking-wide mb-5">
+            Are you tired of sifting through countless websites and losing track
+            of your favorites? Marker is here to simplify your online life by
+            centralizing your resources and helping you discover new ones all in
+            one place.
+          </p>
+          <Link
+            to="/dashboard"
+            className="rounded-md bg-transparent z-10 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-orange-50"
           >
-            <svg
-              width="503"
-              height="503"
-              viewBox="0 0 503 503"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M440.595 202.994H243.72C225.2 202.994 210.187 218.007 210.187 236.527V433.402C210.187 451.921 225.2 466.935 243.72 466.935H440.595C459.114 466.935 474.128 451.921 474.128 433.402V236.527C474.128 218.007 459.114 202.994 440.595 202.994Z"
-                fill="#F7632D"
-              />
-              <path
-                opacity="0.25"
-                d="M159.736 29.1572H53.1168C43.8568 29.1572 36.3501 36.6639 36.3501 45.9239V152.543C36.3501 161.803 43.8568 169.31 53.1168 169.31H159.736C168.996 169.31 176.503 161.803 176.503 152.543V45.9239C176.503 36.6639 168.996 29.1572 159.736 29.1572Z"
-                fill="#FA5D23"
-              />
-              <path
-                opacity="0.5"
-                d="M317.007 99.2419H131.568C117.678 99.2419 106.418 110.502 106.418 124.392V309.831C106.418 323.721 117.678 334.981 131.568 334.981H317.007C330.897 334.981 342.157 323.721 342.157 309.831V124.392C342.157 110.502 330.897 99.2419 317.007 99.2419Z"
-                fill="#FA5D23"
-              />
-            </svg>
-          </div>
-          <div className="max-w-[100ch] flex flex-col items-start justify-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl">
-              Unlock a Smarter Web Experience with Marker!
-            </h1>
-            <p className="mt-4 text-md leading-7 tracking-wide text-zinc-600">
-              Are you tired of sifting through countless websites and losing
-              track of your favorites? Marker is here to simplify your online
-              life by centralizing your resources and helping you discover new
-              ones all in one place.
-            </p>
-            <div className="mt-10 flex items-center  gap-x-6">
-              <Link
-                aria-label="link to main app"
-                to="/app"
-                className="rounded-md bg-transparent border px-3.5 py-2 text-sm font-semibold text-zince-700  hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
-              >
-                Get started Organizing Your Digital World!
-              </Link>
-            </div>
-          </div>
+            Organize Your Digital World Today
+          </Link>
         </div>
       </section>
-      <section aria-label="Features section introducing Marker - Your Innovative Solution for [Specify Purpose]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="flex flex-col items-start gap-2">
-            <span aria-label="Icons">
-              <RiStackLine className="w-7 h-7" />
-            </span>
-            <h2 className="text-xl text-zince-800 leading-7 font-bold">
-              Unified Resource Hub
-            </h2>
-            <p className="leading-7 tracking-wide text-zinc-600">
-              Access new website based of your saved websites, tools, and in one
-              organized space. Marker simplifies your digital surfing life,
-              making it easy to find and new resources.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-2">
-            <span aria-label="Icons">
-              <RiFocus2Line className="w-7 h-7" />
-            </span>
-            <h2 className="text-xl text-zince-800 leading-7 font-bold">
-              Recommendation Engine
-            </h2>
-            <p className="leading-7 tracking-wide text-zinc-600">
-              Discover new resources tailored to your interests and project
-              needs. Our suggestions are based of the folder so you&#39;re
-              always in the know about the most relevant content
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-2">
-            <span aria-label="Icons">
-              <RiDeviceLine className="w-7 h-7" />
-            </span>
-            <h2 className="text-xl text-zince-800 leading-7 font-bold">
-              Collaboration Made Easy
-            </h2>
-            <p className="leading-7 tracking-wide text-zinc-600">
-              Share collections of resources with your team or collaborators,
-              making it a breeze to work together, gather feedback, and stay in
-              sync on your creative endeavors.
-            </p>
-          </div>
-        </div>
-      </section>
-    </>
+      <div className="absolute top-40 -left-20 -z-10 w-[90%] pointer-events-none min-h-screen blur-hero bg-gradient-to-r from-orange-200 to-transparent rotate-12"></div>
+    </div>
+  );
+}
+
+export function FramerShapes() {
+  return (
+    <svg
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-[503px] rotate-90"
+    >
+      <g clipPath="url(#clip0_231_82)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M0 0C0 55.2285 44.7715 100 100 100C44.7715 100 0 144.772 0 200H12C12 151.399 51.3989 112 100 112C148.601 112 188 151.399 188 200H200C200 144.772 155.228 100 100 100C155.228 100 200 55.2285 200 0H188C188 48.6011 148.601 88 100 88C51.3989 88 12 48.6011 12 0H0ZM24 0C24 41.9736 58.0264 76 100 76C141.974 76 176 41.9736 176 0H164C164 35.3462 135.346 64 100 64C64.6538 64 36 35.3462 36 0H24ZM48 0C48 28.7188 71.2812 52 100 52C128.719 52 152 28.7188 152 0H140C140 22.0914 122.091 40 100 40C77.9086 40 60 22.0914 60 0H48ZM100 124C141.974 124 176 158.026 176 200H164C164 164.654 135.346 136 100 136C64.6538 136 36 164.654 36 200H24C24 158.026 58.0264 124 100 124ZM100 148C128.719 148 152 171.281 152 200H140C140 177.909 122.091 160 100 160C77.9086 160 60 177.909 60 200H48C48 171.281 71.2812 148 100 148Z"
+          fill="url(#paint0_linear_231_82)"
+        />{" "}
+      </g>{" "}
+      <defs>
+        {" "}
+        <linearGradient
+          id="paint0_linear_231_82"
+          x1="100"
+          y1="0"
+          x2="100"
+          y2="200"
+          gradientUnits="userSpaceOnUse"
+        >
+          {" "}
+          <stop stopColor="#fdba74" /> <stop offset="1" stopColor="#ea580c" />{" "}
+        </linearGradient>{" "}
+        <clipPath id="clip0_231_82">
+          {" "}
+          <rect width="200" height="200" fill="white" />{" "}
+        </clipPath>{" "}
+      </defs>{" "}
+    </svg>
   );
 }

@@ -16,6 +16,9 @@ export default {
           // ...
         ],
       },
+      blur: {
+        hero: "499.5px"
+      }
     },
   },
   plugins: [],
