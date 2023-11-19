@@ -5,7 +5,7 @@ import { RiMenuLine } from 'react-icons/ri';
 
 export default function Appbar({Navigtion}) {
   return (
-    <header className="overflow-hidden bg-white shadow absolute top-0 z-20 w-full">
+    <header className="overflow-hidden bg-white shadow">
     <section className="px-4 py-5 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 container mx-auto">
       <div className="h-auto flex items-center justify-between">
         <Link to="/" aria-label="markers logo that you can click to the home page">

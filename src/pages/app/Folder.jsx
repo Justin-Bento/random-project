@@ -37,12 +37,12 @@ export default function Folder() {
 
   return (
     <>
-      <section className="overflow-hidden min-h-screen mt-16">
+      <section className="overflow-hidden min-h-screen mt-12">
         <div className="container  lg:max-w-9xl mx-auto p-4">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="">
               <Greeting name={"John"} />
-              <p className="text-base tracking-wide text-gray-600">
+              <p className="leading-7 [&:not(:first-child)]:mt-4">
                 To inject a new element into the DOM on a button click in a
                 React component, you can follow these steps:
               </p>
