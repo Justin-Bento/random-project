@@ -1,7 +1,7 @@
 export default function Bookmarks() {
   return (
     <>
-      <div className="xl:container xl:mx-auto px-16 pt-16">
+      <div className="xl:container xl:mx-auto my-8 sm:p-6">
         <h1 className="scroll-m-20 pb-2 text-3xl font-bold tracking-normal first:mt-0">
           Title That Best Suits Bookmarks Category
         </h1>
