@@ -15,6 +15,7 @@ import Contact from "./pages/marketing/Contact";
 import Dashboard from "./pages/app/Dashboard";
 import Folder from "./pages/app/Folder";
 import Bookmarks from "./pages/app/Bookmarks";
+import Settings from "./pages/app/Settings";
 
 // Define the main App component
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="folders" element={<Folder />} />
           {/* Bookmarks page with dynamic parameter */}
           <Route path="folders/:id" element={<Bookmarks />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
       <Footer Navigation={footer} />
