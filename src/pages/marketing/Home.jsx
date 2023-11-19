@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import { RiFocus2Line, RiLayoutRowLine, RiDeviceLine  } from "react-icons/ri";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative mb-16">
       <section className="grid grid-cols-1 lg:grid-cols-2 container mx-auto items-center place-content-center gap-12 min-h-screen p-6 lg:p-0">
         <div className="flex items-center place-content-start lg:place-content-start lg:mt-0">
           <FramerShapes />
@@ -26,6 +27,23 @@ export default function Home() {
         </div>
       </section>
       <div className="absolute top-lg xl:top-40 left-0 xl:-left-20 -z-10 xl:w-[90%] pointer-events-none xl:min-h-screen blur-hero bg-gradient-to-r from-orange-200 to-transparent xl:rotate-12"></div>
+      <section className="grid grid-cols-1 lg:grid-cols-3 container mx-auto gap-8 p-4 lg:p-0">
+        <div className="w-full space-y-2">
+          <RiLayoutRowLine  className="w-8 h-8" />
+          <h2 className="text-lg font-bold">Unified Resource Hub.</h2>
+          <p className=" leading-7 tracking-wide text-gray-700">Access new website based of your saved websites, tools, and in one organized space. Marker simplifies your digital surfing life, making it easy to find and new resources.</p>
+        </div>
+        <div className="w-full space-y-2">
+          <RiFocus2Line className="w-8 h-8" />
+          <h2 className="text-lg font-bold">Recommendation Engine.</h2>
+          <p className=" leading-7 tracking-wide text-gray-700">Discover new resources tailored to your interests and project needs. Our suggestions are based of the folder so you're always in the know about the most relevant content</p>
+        </div>
+        <div className="w-full space-y-2">
+          <RiDeviceLine className="w-8 h-8" />
+          <h2 className="text-lg font-bold">Collaboration Made Easy.</h2>
+          <p className=" leading-7 tracking-wide text-gray-700">Share collections of resources with your team or collaborators, making it a breeze to work together, gather feedback, and stay in sync on your creative endeavors.</p>
+        </div>
+      </section>
     </div>
   );
 }
