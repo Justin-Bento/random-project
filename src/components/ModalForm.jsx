@@ -28,16 +28,19 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
       <div className="modal-background"></div>
       <div className="fixed inset-0 bg-zinc-500 bg-opacity-75"></div>
       <div className="fixed inset-0 flex items-center justify-center">
-        <div className="bg-white  px-5 py-4 sm:p-6 rounded-lg max-w-[50ch]">
+        <div className="bg-white  rounded-lg max-w-[50ch]">
           <form onSubmit={handleSubmit}>
             <div className="flex items-start flex-col justify-between gap-4 mb-4">
+              <div className="w-full flex items-center justify-between gap-4 mb-4 border-b p-4">
+              <p className="text-sm text-gray-500">Create A New Folder</p>
               <span
                 onClick={closeModal}
                 className="border p-1 rounded hover:bg-zinc-50 hover:cursor-pointer transition-colors"
               >
                 <RiCloseFill className="fill-zinc-600 hover:fill-zinc-700" />
               </span>
-              <div className="span-y-2">
+              </div>
+              <div className="space-y-2 mb-4 px-4">
                 <h2 className="text-2xl font-bold">
                   User Created Applicant Information
                 </h2>
@@ -47,7 +50,7 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
                 </p>
               </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-8 px-4">
               <div className="">
                 <label className="block text-sm font-medium leading-6 text-zinc-900">
                   Title
@@ -73,7 +76,7 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
             </div>
             <button
               type="submit"
-              className="rounded-md mt-6 bg-orange-100 px-2.5 py-1.5 text-sm font-semibold text-orange-600 hover:bg-orange-200/60 transition-colors ring-1 ring-orange-200/50"
+              className="rounded-md my-8 mx-4 bg-orange-100 px-2.5 py-1.5 text-sm font-semibold text-orange-600 hover:bg-orange-200/60 transition-colors ring-1 ring-orange-200/50"
             >
               Create Folder
             </button>
