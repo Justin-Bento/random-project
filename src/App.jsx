@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 // Import global components for the marker application
 import Appbar from "./components/Appbar";
 import Footer from "./components/Footer";
+import { appbar, footer } from "./lib/data";
 
 // Import pages for the marketing section
 import Home from "./pages/marketing/Home";
@@ -20,7 +21,7 @@ export default function App() {
   // Return the Routes element to define the routing structure
   return (
     <>
-      <Appbar />
+      <Appbar Navigtion={appbar} />
       <Routes>
         {/* Marketing Section Routes */}
         <Route path="/">
@@ -42,7 +43,7 @@ export default function App() {
           <Route path="folders/:id" element={<Bookmarks />} />
         </Route>
       </Routes>
-      <Footer />
+      <Footer Navigation={footer} />
     </>
   );
 }
