@@ -42,7 +42,7 @@ export default function Home() {
           <h2 className="text-lg font-bold">Recommendation Engine.</h2>
           <p className=" leading-7 tracking-wide text-gray-700">
             Discover new resources tailored to your interests and project needs.
-            Our suggestions are based of the folder so you're always in the know
+            Our suggestions are based of the folder so you&#39;e always in the know
             about the most relevant content
           </p>
         </div>
