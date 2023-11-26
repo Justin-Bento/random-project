@@ -5,6 +5,7 @@ import { RiCloseFill } from "react-icons/ri";
 const ModalForm = ({ displayModal, closeModal, createFolder }) => {
   const [title, setTitle] = useState("");
   const [supporting, setSupporting] = useState("");
+  const [customMedia, setCustomMedia] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,11 +14,12 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
     const url = title.replace(/\s+/g, "-").toLowerCase();
 
     // Pass the form data to the createFolder function
-    createFolder({ headline: title, supporting, url });
+    createFolder({ headline: title, media: customMedia, supporting, url });
 
     // Clear form fields
     setTitle("");
     setSupporting("");
+    setCustomMedia("");
 
     // Close the modal
     closeModal();
@@ -32,13 +34,13 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
           <form onSubmit={handleSubmit}>
             <div className="flex items-start flex-col justify-between gap-4 mb-4">
               <div className="w-full flex items-center justify-between gap-4 mb-4 border-b p-4">
-              <p className="text-sm text-gray-500">Create A New Folder</p>
-              <span
-                onClick={closeModal}
-                className="border p-1 rounded hover:bg-zinc-50 hover:cursor-pointer transition-colors"
-              >
-                <RiCloseFill className="fill-zinc-600 hover:fill-zinc-700" />
-              </span>
+                <p className="text-sm text-gray-500">Create A New Folder</p>
+                <span
+                  onClick={closeModal}
+                  className="border p-1 rounded hover:bg-zinc-50 hover:cursor-pointer transition-colors"
+                >
+                  <RiCloseFill className="fill-zinc-600 hover:fill-zinc-700" />
+                </span>
               </div>
               <div className="space-y-2 mb-4 px-4">
                 <h2 className="text-2xl font-bold">
@@ -60,6 +62,18 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
                   className="block w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
+                  required
+                />
+              </div>
+              <div aria-label="input for custom image">
+                <label className="block text-sm font-medium leading-6 text-zinc-900">
+                  Custom Image
+                </label>
+                <input
+                  type="text"
+                  className="block w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                  value={customMedia}
+                  onChange={(e) => setCustomMedia(e.target.value)}
                   required
                 />
               </div>
