@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import { RiMenuLine } from 'react-icons/ri';
+import Logo from "./Logo";
 
 export default function Appbar({Navigtion}) {
   return (
@@ -9,7 +10,7 @@ export default function Appbar({Navigtion}) {
     <section className="px-4 py-5 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 wrapper">
       <div className="h-auto flex items-center justify-between">
         <Link to="/" aria-label="markers logo that you can click to the home page">
-          <img src="/assets/logo/marker_rgb_black.svg" alt="" className="h-8 w-auto" />
+          <Logo fillColor="fill-gray-800" className="w-24 hover:opacity-90 transition-all  focus:fill-orange-500" />
         </Link>
         <div className="border p-2 rounded lg:hidden">
           <RiMenuLine className="w-4 h-4" />
