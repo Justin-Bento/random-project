@@ -16,6 +16,7 @@ import Dashboard from "./pages/app/Dashboard";
 import Folder from "./pages/app/Folder";
 import Bookmarks from "./pages/app/Bookmarks";
 import Settings from "./pages/app/Settings";
+import Account from "./pages/app/Account";
 
 // Define the main App component
 export default function App() {
@@ -36,6 +37,8 @@ export default function App() {
 
         {/* App Section Routes */}
         <Route path="/dashboard">
+          {/* Account page */}
+          <Route path="account" element={<Account />} />
           {/* Dashboard page */}
           <Route index element={<Dashboard />} />
           {/* Folders page */}
