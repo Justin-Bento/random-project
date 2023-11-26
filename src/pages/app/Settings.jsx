@@ -1,9 +1,13 @@
-export default function Example() {
+
+import { useLocation } from 'react-router-dom';
+
+export default function Settings() {
+  let location = useLocation();
   return (
     <>
-      <div className="px-4 space-y-12 my-12 sm:px-6 lg:flex-auto lg:px-0 container mx-auto">
+      <div className="wrapper py-16 min-h-screen lg:flex-auto lg:px-0 container mx-auto">
         <div>
-          <h2 className="text-base font-semibold leading-7 text-gray-900">App</h2>
+          <h2 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize m-0 p-0">{location.pathname.slice(11)}</h2>
           <p className="mt-1 text-sm leading-6 text-gray-500">
             This information will be displayed publicly so be careful what you
             share.
