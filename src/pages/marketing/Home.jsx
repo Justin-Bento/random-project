@@ -79,6 +79,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="wrapper">
+        <header className="">
+          <h4 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Simplify Your Online Experience</h4>
+          <p className="text-lg tracking-wide text-gray-700 mt-2">Navigate the web with ease. Our intuitive solution simplifies your online experience, ensuring that you spend less time searching and more time enjoying the content that matters to you.</p>
+        </header>
+      </section>
+      <section className="wrapper">
+        <header className="">
+          <h5 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Save Time, Discover More </h5>
+          <p className="text-lg tracking-wide text-gray-700 mt-2">Surf the web on your terms. Our tool aims to, give you the control to tailor your online experience precisely to your liking. Without stealing your personal infromation.</p>
+        </header>
+      </section>
+      <section className="wrapper">
+        <header className="">
+          <h6 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Your Personalized Web Hub</h6>
+          <p className="text-lg tracking-wide text-gray-700 mt-2">Tailor your web experience to suit your tastes. Our product acts as your personal hub, curating content that aligns with your interests and making every browsing session uniquely yours.</p>
+        </header>
+      </section>
     </div>
   );
 }
