@@ -26,7 +26,10 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <div className="absolute top-lg xl:top-40 left-0 xl:-left-20 -z-10 xl:w-[90%] pointer-events-none xl:min-h-screen blur-hero bg-gradient-to-r from-orange-200 to-transparent xl:rotate-12"></div>
+      {/* End of hero section. */}
+      <div className="absolute top-lg xl:top-40 left-0 xl:-left-20 -z-10 xl:w-[90%] pointer-events-none xl:min-h-screen blur-hero bg-gradient-to-r from-orange-200 to-transparent xl:rotate-12">
+        {/* This is the graident for hero section. */}
+      </div>
       <section className="grid grid-cols-1 lg:grid-cols-3 wrapper gap-8 p-4 lg:p-0">
         <div className="w-full space-y-2">
           <RiLayoutRowLine className="w-8 h-8" />
@@ -56,6 +59,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      {/* End of features section. */}
       <section className="bg-orange-500 py-12">
         <div className="flex wrapper flex-col gap-8 p-6 lg:flex-row mx-auto text-gray-50">
           <div className="w-full flex items-start justify-center flex-col">
@@ -79,6 +83,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* End of primary call to action section. */}
       <section className="wrapper">
         <header className="">
           <h4 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Simplify Your Online Experience</h4>
@@ -95,6 +100,7 @@ export default function Home() {
           <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
         </div>
       </section>
+      {/* End of breaking down steps section. */}
       <section className="wrapper">
         <header className="">
           <h5 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Save Time, Discover More </h5>
@@ -102,12 +108,14 @@ export default function Home() {
         </header>
         <div className="w-full border border-gray-800 rounded mt-8 aspect-video"></div>
       </section>
+      {/* End of benifits section. */}
       <section className="wrapper">
         <header className="">
           <h6 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Your Personalized Web Hub</h6>
           <p className="text-lg tracking-wide text-gray-700 mt-2">Tailor your web experience to suit your tastes. Our product acts as your personal hub, curating content that aligns with your interests and making every browsing session uniquely yours.</p>
         </header>
       </section>
+      {/* End of benfits 2 section. */}
     </div>
   );
 }
