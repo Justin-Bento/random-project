@@ -14,3 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.wrapper {
+  @apply w-11/12 mx-auto xl:container
+}
