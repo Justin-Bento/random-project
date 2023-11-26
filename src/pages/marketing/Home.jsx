@@ -84,12 +84,23 @@ export default function Home() {
           <h4 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Simplify Your Online Experience</h4>
           <p className="text-lg tracking-wide text-gray-700 mt-2">Navigate the web with ease. Our intuitive solution simplifies your online experience, ensuring that you spend less time searching and more time enjoying the content that matters to you.</p>
         </header>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:grid-cols-4 mt-8">
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+          <div className="w-full h-72 border border-gray-800 rounded">&nbsp;</div>
+        </div>
       </section>
       <section className="wrapper">
         <header className="">
           <h5 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize">Save Time, Discover More </h5>
           <p className="text-lg tracking-wide text-gray-700 mt-2">Surf the web on your terms. Our tool aims to, give you the control to tailor your online experience precisely to your liking. Without stealing your personal infromation.</p>
         </header>
+        <div className="w-full border border-gray-800 rounded mt-8 aspect-video"></div>
       </section>
       <section className="wrapper">
         <header className="">
