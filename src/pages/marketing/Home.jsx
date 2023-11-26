@@ -4,7 +4,7 @@ import { RiFocus2Line, RiLayoutRowLine, RiDeviceLine } from "react-icons/ri";
 export default function Home() {
   return (
     <div className="relative mb-16 space-y-32 my-32">
-      <section className="grid grid-cols-1 lg:grid-cols-2 container mx-auto items-center place-content-center gap-12 p-6 lg:p-0">
+      <section className="grid grid-cols-1 lg:grid-cols-2 wrapper items-center place-content-center gap-12 p-6 lg:p-0">
         <div className="flex items-center place-content-start lg:place-content-start lg:mt-0">
           <FramerShapes />
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </section>
       <div className="absolute top-lg xl:top-40 left-0 xl:-left-20 -z-10 xl:w-[90%] pointer-events-none xl:min-h-screen blur-hero bg-gradient-to-r from-orange-200 to-transparent xl:rotate-12"></div>
-      <section className="grid grid-cols-1 lg:grid-cols-3 container mx-auto gap-8 p-4 lg:p-0">
+      <section className="grid grid-cols-1 lg:grid-cols-3 wrapper gap-8 p-4 lg:p-0">
         <div className="w-full space-y-2">
           <RiLayoutRowLine className="w-8 h-8" />
           <h2 className="text-lg font-bold">Unified Resource Hub.</h2>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-orange-500 py-12">
-        <div className="flex container flex-col gap-8 p-6 lg:flex-row mx-auto text-gray-50">
+        <div className="flex wrapper flex-col gap-8 p-6 lg:flex-row mx-auto text-gray-50">
           <div className="w-full flex items-start justify-center flex-col">
             <h3 className="mb-2 text-2xl font-semibold tracking-normal">
               Real Stories, Real Experiences, Real Reviews
