@@ -9,10 +9,10 @@ export default function Home() {
           <FramerShapes />
         </div>
         <div className="flex items-start justify-center flex-col max-w-[100ch] relative">
-          <h1 className="font-display font-semibold tracking-normal text-neutral-950 text-4xl xl:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Unlock a Smarter Web Experience with Marker!
           </h1>
-          <p className="leading-7 mt-4 text-base xl:text-xl tracking-wide mb-5">
+          <p className="my-6 text-lg leading-8 text-gray-600">
             Are you tired of sifting through countless websites and losing track
             of your favorites? Marker is here to simplify your online life by
             centralizing your resources and helping you discover new ones all in
