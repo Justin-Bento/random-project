@@ -1,6 +1,6 @@
 export default function Greeting(props) {
   return (
     // eslint-disable-next-line react/prop-types
-    <h1 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Welcome To Marker, {props.name}!</h1>
+    <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 capitalize m-0 p-0">Welcome To Marker, {props.name}!</h1>
   );
 }
