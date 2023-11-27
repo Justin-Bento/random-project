@@ -16,5 +16,5 @@
 }
 
 .wrapper {
-  @apply w-11/12 mx-auto xl:container
+  @apply w-11/12 mx-auto md:w-10/12 xl:container p-4 sm:p-0
 }
