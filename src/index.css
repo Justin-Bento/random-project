@@ -18,6 +18,9 @@
 .wrapper {
   @apply w-11/12 mx-auto md:w-10/12 xl:container p-4 sm:p-0
 }
-.input-text {
+.form-input {
   @apply block p-3 w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1  ring-zinc-300 placeholder:text-zinc-400 sm:text-sm sm:leading-6;
+}
+.form-lable {
+  @apply block text-sm font-medium leading-6 text-zinc-900;
 }

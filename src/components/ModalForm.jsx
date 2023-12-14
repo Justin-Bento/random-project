@@ -54,35 +54,35 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
             </div>
             <div className="space-y-8 px-4">
               <div className="">
-                <label className="block text-sm font-medium leading-6 text-zinc-900">
+                <label className="form-lable">
                   Title
                 </label>
                 <input
                   type="text"
-                  className="input-text"
+                  className="form-input"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   required
                 />
               </div>
               <div aria-label="input for custom image">
-                <label className="block text-sm font-medium leading-6 text-zinc-900">
+                <label className="form-lable">
                   Custom Image
                 </label>
                 <input
                   type="text"
-                  className="input-text"
+                  className="form-input"
                   value={customMedia}
                   onChange={(e) => setCustomMedia(e.target.value)}
                   required
                 />
               </div>
               <div className="">
-                <label className="block text-sm font-medium leading-6 text-zinc-900">
+                <label className="form-lable">
                   Supporting Text
                 </label>
                 <textarea
-                  className="input-text"
+                  className="form-input"
                   value={supporting}
                   onChange={(e) => setSupporting(e.target.value)}
                 ></textarea>
