@@ -59,7 +59,7 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
                 </label>
                 <input
                   type="text"
-                  className="block w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                  className="block p-3 w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   required
@@ -71,7 +71,7 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
                 </label>
                 <input
                   type="text"
-                  className="block w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                  className="block p-3 w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
                   value={customMedia}
                   onChange={(e) => setCustomMedia(e.target.value)}
                   required
@@ -82,7 +82,7 @@ const ModalForm = ({ displayModal, closeModal, createFolder }) => {
                   Supporting Text
                 </label>
                 <textarea
-                  className="block w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                  className="block p-3 w-full rounded-md border-0 py-1.5 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
                   value={supporting}
                   onChange={(e) => setSupporting(e.target.value)}
                 ></textarea>
